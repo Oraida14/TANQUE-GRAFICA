@@ -1,0 +1,131 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+} 
+body{
+  height: 100vh;
+  background-color: beige;
+}
+
+div{
+  position: relative;
+  left: 0;
+  top: 0;
+}
+.uno{
+  position: absolute;
+  height:800px;
+  width:680px;
+  top: 20px;
+  left : -100px;
+  z-index: 50%;
+}
+
+.caja-padre{
+width: 45%;   
+min-width: 20px;
+position: relative;
+transform: translate(-50%,-50%);
+left: 50%;
+top: 40%;
+}
+.contenedor{
+  width: 100%;
+  padding: 30px 30px 50px;
+  background: linear-gradient(15deg,darkblue,black);
+  border: 2px solid rgba(0, 0, 0, 0.06);
+  border-radius: 150px;
+  box-shadow: 50px 20px  30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(80px) ;
+} 
+
+.contenedor *{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-weight: 2%;
+
+}
+h2{
+  margin-bottom: 35px;
+  letter-spacing: 200px;
+  text-align: center;
+  font-size: -52px;
+  font-weight: bold;
+}
+
+.skills :not(:last-child) {
+  margin-bottom: 15px;
+
+}
+.detalles{
+  width: 1%;
+  display:0;
+  justify-content:90px;
+  margin-bottom: 70px;
+
+}
+.menu{
+  position: relative;
+  border: 0px solid cyan;
+  border-radius: 20px;
+}
+.menu div{
+  position: relative;
+  width: 3px;
+  height: 45px;
+  border-radius: 10px;
+  background-color:cyan ;
+}
+
+/* animacion */
+
+#agua-menu{
+  animation: jmas-barra 2s forwards;
+
+}
+@keyframes jmas-barra{
+  100%{
+      width: 46%;
+  }
+}
+
+#agua-menu{
+  animation: agua-barra 2s forwards;
+
+}
+@keyframes agua-barra{
+  100%{
+      width: 90%;
+  }
+}
+#tanque-menu{
+  animation: tanque-barra 2s forwards;
+}
+
+@keyframes tanque-barra{
+  100%{
+      width: 100%;
+  }
+}
+
+#pozo-menu{
+  animation: pozo-barra 2s forwards;
+}
+
+@keyframes pozo-barra{
+  100%{
+      width:100%;
+  }
+}
+
+#aguas-menu{
+  animation: aguas-barra 2s forwards;
+}
+
+@keyframes aguas-barra{
+  100%{
+      width:100%;
+  }
+}
